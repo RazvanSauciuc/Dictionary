@@ -2,13 +2,13 @@ let raw = [];
 let rawSearch = [];
 let i = 0, j = 0;
 
-function addWords() {
+function addWord() {
     raw[i] = document.getElementById("text").value;
     document.getElementById('textinput').innerHTML = "The word " + raw[i] + " has been added!";
     ++i;
 }
 
-function searchWords() {
+function searchWord() {
     rawSearch[j] = document.getElementById("text").value;
     for (let x = 0; x < i; ++x) {
         if (raw[x] === rawSearch[j]) {
